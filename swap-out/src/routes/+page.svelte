@@ -1,7 +1,7 @@
 <div class="flex-container">
-	<div class="part">3</div>
-	<div class="part">2</div>
-	<div class="part">1</div>
+	<a class="part" href="/map">Map</a>
+	<a class="part" href="/spells">Spells</a>
+	<a class="part" href="/lore">Lore</a>
 </div>
 
 <style>
