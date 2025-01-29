@@ -17,6 +17,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
 	}
 	.part:hover {
 		background-color: #fefcfd;
