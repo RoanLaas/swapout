@@ -1,15 +1,15 @@
 <script lang="ts">
-	const emotion1Name = "Brug"
+	const emotion1Name = 'Brug';
 	const emotion1 = 25;
 	const maxEmotion1 = 50;
 	const emotion1AC = 34;
 
-	const emotion2Name = "Rhymes with"
+	const emotion2Name = 'Rhymes with';
 	const emotion2 = 100;
 	const maxEmotion2 = 100;
 	const emotion2AC = 50;
 
-	const emotion3Name = "Grug"
+	const emotion3Name = 'Grug';
 	const emotion3 = 50;
 	const maxEmotion3 = 200;
 	const emotion3AC = 30;
@@ -69,13 +69,12 @@
 		display: flex;
 		height: 100%;
 		width: 50%;
-		
+
 		justify-content: space-evenly;
 
 		align-content: flex-start;
 		flex-direction: column;
 		align-items: flex-start;
-
 	}
 	.health-bar-container {
 		display: flex;

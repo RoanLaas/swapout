@@ -1,3 +1,3 @@
 <script lang="ts">
-	import type { Character } from '$lib/types';
+	import type { Player } from '$lib/types.ts';
 </script>
