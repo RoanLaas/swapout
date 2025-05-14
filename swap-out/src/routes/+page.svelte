@@ -1,7 +1,7 @@
 <div class="flex-container">
 	<a class="part" href="/map">Map</a>
 	<a class="part" href="/spells">Spells</a>
-	<a class="part" href="/lore">Lore</a>
+	<a class="part" href="/CharacterSheet">Character Sheet</a>
 </div>
 
 <style>
@@ -21,11 +21,5 @@
 	}
 	.part:hover {
 		background-color: #fefcfd;
-	}
-
-	body {
-		margin: 0px;
-		height: 100%;
-		width: 100%;
 	}
 </style>
