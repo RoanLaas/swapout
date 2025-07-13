@@ -1,12 +1,16 @@
 export type Player = {
 	maxHealth: number;
+	currentHealth: number;
 
 	emotion1Name: string;
 	maxEmotion1: number;
+	currentEmotion1: number;
 	emotion2Name: string;
 	maxEmotion2: number;
+	currentEmotion2: number;
 	emotion3Name: string;
 	maxEmotion3: number;
+	currentEmotion3: number;
 
 	strength: number;
 	dexterity: number;
@@ -36,3 +40,13 @@ export type Player = {
 
 	inventory: {};
 };
+
+export type Class = {
+	className: string;
+
+	primaryStat1: string;
+	primaryStat2: string;
+
+	secondaryStat1: string;
+	secondaryStat2: string;
+}

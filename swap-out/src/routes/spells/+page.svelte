@@ -2,17 +2,17 @@
 	const emotion1Name = 'Brug';
 	const emotion1 = 25;
 	const maxEmotion1 = 50;
-	const emotion1AC = 34;
+	const emotion1AC = 10;
 
 	const emotion2Name = 'Rhymes with';
 	const emotion2 = 100;
 	const maxEmotion2 = 100;
-	const emotion2AC = 50;
+	const emotion2AC = 4;
 
 	const emotion3Name = 'Grug';
 	const emotion3 = 50;
 	const maxEmotion3 = 200;
-	const emotion3AC = 30;
+	const emotion3AC = 15;
 
 	const health = 8;
 	const maxHealth = 14;
@@ -44,6 +44,14 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="health-bar-container">
+		<text>Health</text>
+		<div class="bar>">
+			<div class="bar-fill" style="width: {(health / maxHealth) * 100}"></div>
+		</div>
+	</div>
+	<div class=""></div>
 </div>
 
 <style>
