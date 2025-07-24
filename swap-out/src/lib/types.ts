@@ -49,4 +49,4 @@ export type Class = {
 
 	secondaryStat1: string;
 	secondaryStat2: string;
-}
+};
