@@ -2,6 +2,7 @@ export class Player {
 	maxHealth: number = 0;
 	currentHealth: number = 0;
 
+	// HomeBrew Stuff that the spell builder will use
 	emotion1Name: string = "null";
 	maxEmotion1: number = 0;
 	currentEmotion1: number = 0;
@@ -12,6 +13,7 @@ export class Player {
 	maxEmotion3: number = 0;
 	currentEmotion3: number = 0; 
 
+	// Base stats shit
 	strength: number = 0;
 	dexterity: number = 0;
 	constitution: number = 0;
@@ -19,6 +21,7 @@ export class Player {
 	wisdom: number = 0;
 	charisma: number = 0;
 
+	// Skills
 	acrobatics: number = 0;
 	animalHandling: number = 0;
 	arcana: number = 0;
