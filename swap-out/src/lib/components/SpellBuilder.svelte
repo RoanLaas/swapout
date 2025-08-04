@@ -1,5 +1,10 @@
 <script lang="ts">
-	import { writable, get } from 'svelte/store';
+	import { currentCharacter } from "../../store/stores.js";
 
-	console.log(get(store));
+	let yourChar;
+	currentCharacter.subscribe( value => {
+		yourChar = value;
+	})
+
+	console.log(yourChar)
 </script>
