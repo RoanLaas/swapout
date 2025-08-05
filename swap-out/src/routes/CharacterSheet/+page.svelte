@@ -12,7 +12,7 @@
 
 <div class="flex-container">
 	<a class="part" href="/CharacterSheet/CharacterCreator">Create a Character?</a>
-	<a class="part" href="/ActualCharacterSheet">Have a Character?</a>
+	<a class="part" href="/CharacterSheet/ActualCharacterSheet">Have a Character?</a>
 </div>
 
 <style>
