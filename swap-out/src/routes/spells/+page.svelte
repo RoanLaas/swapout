@@ -1,4 +1,6 @@
 <script lang="ts">
+	import SpellBuilder from "$lib/components/SpellBuilder.svelte";
+
 	const emotion1Name = 'Brug';
 	const emotion1 = 25;
 	const maxEmotion1 = 50;
@@ -17,6 +19,8 @@
 	const health = 8;
 	const maxHealth = 14;
 </script>
+
+<SpellBuilder />
 
 <div class="bottom-bar">
 	<div class="emotion-info-container">
