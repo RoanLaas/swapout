@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { currentCharacter } from "../../store/stores.js";
+	import { currentCharacter } from "../../../store/stores.js";
 
 	let yourChar;
-	currentCharacter.subscribe( value => {
+	currentCharacter.subscribe(value => {
 		yourChar = value;
 	})
 
