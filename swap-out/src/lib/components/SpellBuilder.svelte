@@ -4,6 +4,7 @@
     import {dndzone} from "svelte-dnd-action";
 
 	let yourChar;
+
 	currentCharacter.subscribe( value => {
 		yourChar = value;
 	})
@@ -16,18 +17,32 @@
         {id: 3, name: "item3"},
         {id: 4, name: "item4"}
     ];
-    const flipDurationMs = 300;
+    let otherItems = [
+        {id: 5, name: "Bo"},
+    ]
+
+    let type = "One"
+
+
+    const flipDurationMs = 50;
+
     function handleDndConsider(e) {
         items = e.detail.items;
+        type = e.detail.type;
     }
     function handleDndFinalize(e) {
         items = e.detail.items;
+        type = e.detail.type;
     }
 </script>
 
 <style>
+    dndContainer {
+
+    }
     section {
-        width: 50%;
+        width: 33%;
+        height: 33%;
         padding: 0.3em;
         border: 1px solid black;
         /* this will allow the dragged element to scroll the list although starting in version 0.9.41 the lib would detect any scrollable parent*/
@@ -35,15 +50,19 @@
         height: 200px;
     }
     div {
-        width: 50%;
         padding: 0.2em;
         border: 1px solid blue;
         margin: 0.15em 0;
     }
 </style>
 
-<section use:dndzone="{{items, flipDurationMs}}" on:consider="{handleDndConsider}" on:finalize="{handleDndFinalize}">
+<section use:dndzone="{{items, flipDurationMs, type}}" on:consider="{handleDndConsider}" on:finalize="{handleDndFinalize}">
     {#each items as item(item.id)}
+    <div animate:flip="{{duration: flipDurationMs}}">{item.name}</div>
+    {/each}
+</section>
+<section use:dndzone="{{items, flipDurationMs, type}}" on:consider="{handleDndConsider}" on:finalize="{handleDndFinalize}">
+    {#each otherItems as item(item.id)}
     <div animate:flip="{{duration: flipDurationMs}}">{item.name}</div>
     {/each}
 </section>
