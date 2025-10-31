@@ -6,6 +6,8 @@ Try to keep all the folders in the places they're meant to go:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
+- `resources`: The folder than contains images and shit like that
+- `bin`: The folder that contains all the auto generated .class files
 
 ## Dependency Shit
 
