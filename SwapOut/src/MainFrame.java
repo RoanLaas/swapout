@@ -19,23 +19,35 @@ public class MainFrame extends JFrame{
         add(topPanel, BorderLayout.NORTH);
 
         JButton testButton = new JButton();
-        testButton.setText("Testy");
+        testButton.setText("Map");
         testButton.addActionListener(new ActionListener() {
 
             // ToDo: Have each button clear the bottom panel and set the elements to what is needed in each button
             @Override
             public void actionPerformed( ActionEvent e){
-                testText.setText("Button one pressed");   
+                testText.setText("Map");   
             }
         });
         topPanel.add(testButton);
 
         JButton testButton2 = new JButton();
-        testButton2.setText("More testies");
+        testButton2.setText("Character Sheet");
+        testButton2.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                testText.setText("Button 2 is pressed");
+            }
+        });
         topPanel.add(testButton2);
 
         JButton testButton3 = new JButton();
-        testButton3.setText("Even more testing");
+        testButton3.setText("Spell builder");
+        testButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                testText.setText("Button 3 pressed");
+            }
+        });
         topPanel.add(testButton3);
 
 
