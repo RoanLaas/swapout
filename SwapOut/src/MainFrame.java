@@ -20,14 +20,17 @@ public class MainFrame extends JFrame{
         cardLayout = new CardLayout();
         bottomPanel = new JPanel(cardLayout);
 
+        bottomPanel.add(new WelcomePanel(), "WELCOME");
         bottomPanel.add(new SpellBuilderPanel(), "SPELLBUILDER");
         bottomPanel.add(new CharacterSheetPanel(), "CHARSHEET");
         bottomPanel.add(new MapPanel(), "MAP");
 
         add(bottomPanel, BorderLayout.CENTER);
+        cardLayout.show(bottomPanel, "WELCOME");
 
 
         // ----- Top panel with all the page selecty bits -----
+
         topPanel = new JPanel(new FlowLayout());
         topPanel.setBackground(Color.BLACK);
 
