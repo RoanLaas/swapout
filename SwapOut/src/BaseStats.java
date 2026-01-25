@@ -1,6 +1,4 @@
 public class BaseStats {
-   private int health;
-
    private int strength;
    private int intelligence;
    private int dexterity;
@@ -41,8 +39,14 @@ public class BaseStats {
         return this.charisma;
     }
 
-    public int getHealth(){
-        return this.health;
+    public String getAllStatsAsString(){
+        return String.join("\n",
+            String.valueOf(dexterity),
+            String.valueOf(intelligence),
+            String.valueOf(dexterity),
+            String.valueOf(constitution),
+            String.valueOf(wisdom),
+            String.valueOf(charisma)
+        );
     }
-
 }

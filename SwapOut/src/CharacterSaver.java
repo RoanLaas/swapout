@@ -10,7 +10,7 @@ public class CharacterSaver {
     private static BaseStats testBaseStats = new BaseStats(8, 7, 7, 9, 11, 1);
     private static Character testCharacter = new Character(testBaseStats, "George");
 
-    private static String testCharString = testCharacter.toString();
+    private static String testCharString = testCharacter.formatForSave();
 
     public static void main(String[] args){
        Path outputPath = Paths.get("SavedCharacters", "George");
