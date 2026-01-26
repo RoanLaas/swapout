@@ -12,8 +12,12 @@ public class Character extends DNDClass{
         return this.name;
     }
 
+    public int getXP(){
+        return this.xp;
+    }
+
     public String formatForSave(){
-        String savedChar = String.format("%s \n %d \n", this.name, this.xp);
+        String savedChar = String.format("%s\n%d\n", this.name, this.xp);
         savedChar += this.baseStats.getAllStatsAsString();
 
         return savedChar;

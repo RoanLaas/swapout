@@ -8,6 +8,6 @@ public class CharacterSheetPanel extends JPanel{
     private int test = testPlayer.baseStats.getCharisma();
 
     public CharacterSheetPanel() {
-        add(new JLabel());
+        add(new JLabel(String.format("%d", test)));
     }
 }
