@@ -1,17 +1,14 @@
+import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Spell {
-    protected String name;
-    protected String description;
-    protected String damage;
-    // private String effects;
-}
+public class Spell implements Serializable {
+    public String name;
+    public String description;
+    public String damage;
+    // public String effects;
 
-class Custom extends Spell {
-
-    // Custom is used for user-generated spells, I still have to fuck around with this to see if it's working
-    public void createCustom(String name, String description, String damage) {
+    public Spell(String name, String description, String damage) {
         this.name = name;
         this.description = description;
 
@@ -24,7 +21,10 @@ class Custom extends Spell {
         } else {
             System.out.println("Invalid Dice");
         }
-    }
+    }    
 
-    
 }
+
+// class Custom extends Spell {             Still thinking about this
+
+// } 
