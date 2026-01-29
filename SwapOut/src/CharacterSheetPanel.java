@@ -3,7 +3,7 @@ import javax.swing.JLabel;
 
 public class CharacterSheetPanel extends JPanel{
     private BaseStats testBaseStats = new BaseStats(8, 7, 7, 9, 11, 1);
-    private Character testPlayer = new Character(testBaseStats, "Borb2");
+    private Character testPlayer = new Character(testBaseStats, 10, "Borb2");
 
     private int test = testPlayer.baseStats.getCharisma();
 
