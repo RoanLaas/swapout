@@ -13,7 +13,7 @@ public class CharacterSaver {
     private static String testCharString = testCharacter.formatForSave();
 
     public static void main(String[] args){
-        //Change this output to not overwrite chars that already exist(Or maybe have a popup that asks)
+        //ToDo: Change this output to not overwrite chars that already exist(Or maybe have a popup that asks)
         Path outputPath = Paths.get("SavedCharacters", testCharacter.getName());
 
         try{
