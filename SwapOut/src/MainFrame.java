@@ -65,8 +65,6 @@ public class MainFrame extends JFrame{
 
         add(topPanel, BorderLayout.NORTH);
 
-        
-
         setVisible(true);
     } 
 }
