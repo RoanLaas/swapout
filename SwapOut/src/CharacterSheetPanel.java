@@ -6,26 +6,21 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CharacterSheetPanel extends JPanel{
-    private JPanel mainPanel;
-    private CardLayout cardLayout;
 
     public CharacterSheetPanel() {
-        cardLayout = new CardLayout();
-        mainPanel = new JPanel(cardLayout);
-        
-        mainPanel.add(new CharacterCreationPanel(), "CHARCREATION");
-        
         //ToDo figure out how to align these properly to make it look nicer
         JButton createCharButton = new JButton("Create a character");
+        add(createCharButton);
+
+        JButton importCharButton = new JButton("Import a character");
+        add(importCharButton);
+
         createCharButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                cardLayout.show(mainPanel, "CHARCREATION");
+                remove(createCharButton);
+                remove(importCharButton);
             }
         });
-        mainPanel.add(createCharButton);
-
-        JButton importCharButton = new JButton("Import a character");
-        mainPanel.add(importCharButton);
     }
 }
