@@ -8,6 +8,8 @@ Try to keep all the folders in the places they're meant to go:
 - `lib`: the folder to maintain dependencies
 - `resources`: The folder than contains images and shit like that
 - `bin`: The folder that contains all the auto generated .class files
+- `SavedCharacter`: The name is pretty obvious isn't it
+
 
 ## Dependency Shit
 
