@@ -1,0 +1,5 @@
+# Just to stop that shit showing up
+.DS-Store
+
+#Don't need to include the Java.class files
+**/bin
