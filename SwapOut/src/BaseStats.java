@@ -38,15 +38,4 @@ public class BaseStats {
     public int getCharisma(){
         return this.charisma;
     }
-
-    public String getAllStatsAsString(){
-        return String.join("\n",
-            String.valueOf(dexterity),
-            String.valueOf(intelligence),
-            String.valueOf(dexterity),
-            String.valueOf(constitution),
-            String.valueOf(wisdom),
-            String.valueOf(charisma)
-        );
-    }
 }

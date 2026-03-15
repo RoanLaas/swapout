@@ -1,7 +1,10 @@
-public class Character extends DNDClass{
+import java.io.Serializable;
+
+public class Character extends DNDClass implements Serializable{
     private String name;
     private int xp;
     private int health;
+    private static final long serialVersionUID = 1L;
 
     public Character(BaseStats stats,int health, String name){
         super(stats);
@@ -20,13 +23,5 @@ public class Character extends DNDClass{
 
     public int getHealth(){
         return this.health;
-    }
-
-    //ToDo: reformat this so that it matches the order in which the base-stats are input, just so it's easier to check if something's wrong
-    public String formatForSave(){
-        String savedChar = String.format("%s\n%d\n%d\n", this.name, this.xp, this.health);
-        savedChar += this.baseStats.getAllStatsAsString();
-
-        return savedChar;
     }
 }
